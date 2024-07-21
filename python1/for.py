@@ -48,4 +48,26 @@ for student in range(1, 11) : # 1,2,3,4,5,6,7,8,9,10
         break
     print("{0}, 책을 읽어봐".format(student))
     
-    
+# 출석번호가 1 2 3 4 앞에 100을 붙이기로 함 -> 101, 102, 103, 104
+students = [1,2,3,4,5]   
+print(students)
+students = [i+100 for i in students]
+print(students)
+
+# students = ["Iron man", "Thor", "I am groot"]
+# students = [len(i) for i in students]
+# print(students)
+# students = [students.upper() for i in students]
+# print(students)
+
+from random import * 
+cnt = 0
+for i in range(1,51) : #1~ 50 이라는 수 
+    time = randrange(5, 51) # 5 ~ 50분 소요 시간 
+    if 5 <= time <=15:
+        print("[0] {0}번째 손님 (소요시간 : {1}분)".format(i, time))
+        cnt += 1
+    else: 
+        print("[ ] {0}번째 손님 (소요시간 : {1}분)".format(i, time))
+        
+print("총 탑승 승개 : {0} 분".format(time))

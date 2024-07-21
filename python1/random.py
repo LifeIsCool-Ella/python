@@ -10,5 +10,5 @@ print(type(users))
 users = list(users)
 print(type(users))
 
-shuffle(users)
+# shuffle(users)
 print(users)
