@@ -1,3 +1,5 @@
+from random import * 
+
 class Unit:
     def __init__(self, name, hp, speed): # 생성자 
         self.name = name
@@ -79,7 +81,7 @@ class Tank(AttackUnit):
             
 class Wraith(FlyableAttactUnit):
     def __init__(self):
-         FlyableAttactUnit.__init__("레이스", 80, 20, 5)
+         FlyableAttactUnit.__init__(self, "레이스", 80, 20, 5)
          self.clocked = False 
          
     def clocking(self):
@@ -90,3 +92,54 @@ class Wraith(FlyableAttactUnit):
             print("{0} : 클로킹 모드 설정합니다.".format(self.name))
             self.clocked = True
               
+def game_start():
+    print("[알림] 새로운 게임을 시작합니다.")
+
+def game_over():
+    print("Player : gg")
+    print("[Player] 님에 게임에서 퇴장하셨습니다.")
+    
+    
+    
+
+game_start()
+
+m1 = Marine()
+m2 = Marine()
+m3 = Marine()
+
+t1 = Tank()
+t2 = Tank()
+
+w1 = Wraith() 
+
+attack_units = []
+attack_units.append(m1)
+attack_units.append(m2)
+attack_units.append(m3)
+attack_units.append(t1)
+attack_units.append(t2)
+attack_units.append(w1)
+
+for unit in attack_units:
+    unit.move("1시")
+    
+Tank.seize_developed = True
+print("[알림] 탱크 시즈 모드 개발이 완료되었습니다. ")    
+
+for unit in attack_units: 
+    if isinstance(unit, Marine): 
+        unit.stimpack()
+    elif isinstance(unit, Tank):
+        unit.set_seize_mode()
+    elif isinstance(unit, Wraith):
+        unit.clocking()
+        
+for unit in attack_units:
+    unit.attack("1시")        
+    
+for unit in attack_units:
+    unit.damaged(randint(5, 21))
+    
+    
+game_over()        
