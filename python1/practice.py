@@ -140,6 +140,7 @@ print(python.find("java"))
 print("hi")
 print(python.count("n"))
 
+#문자열 포맷
 print("a" + "B")
 print("a", "bb")
 
@@ -160,3 +161,28 @@ print("나는 {age}살이며, {color}색을 좋아해요.".format(age = 20, colo
 age = 20 
 color = "빨간"
 print(f"나는 {age}살이며, {color}색을 좋아해요.")
+
+#탈출문자
+print("백문이 불여일견 \n백견이 불여일타")
+
+print("나는 \"푸바오\"입니다.")
+
+# \\ : 문장내에서 \
+print("I:\\Downloads")
+
+# \r : 커서를 맨 앞으로 이동 
+print("Red Apple\rPine")
+
+#\b : 백스페이스(한 글자 삭제)
+print("Redd\bApple")
+
+#\t : 탭
+print("Red\tApple")
+
+url = "http://naver.com"
+my_str = url.replace("http://","") 
+my_str = my_str[:my_str.index(".")]
+print(my_str)
+password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
+print("{0} 의 비밀번호는 {1} 입니다. ".format(url, password))
+
