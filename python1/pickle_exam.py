@@ -19,3 +19,13 @@ with open("study.txt", "w", encoding="utf8 ") as study_file:
     study_file.write("파이썬 예제 중")
 with open("study.txt", "r", encoding="utf8") as study_file:
     print(study_file.read())
+    
+
+for i in range(1, 51):
+    #with open("I:\\dev\\git\\python\\python1\\report\\"+str(i) + "주차.txt", "w", encoding="utf8") as report_file:
+    with open(".\\python1\\report\\"+str(i) + "주차.txt", "w", encoding="utf8") as report_file:
+        report_file.write("- {0} 주차 주간보고 -".format(i))
+        report_file.write("\n부서 : ")
+        report_file.write("\n이름 : ")
+        report_file.write("\n업무 요약 : ")
+        
