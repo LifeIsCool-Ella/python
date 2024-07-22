@@ -1,7 +1,7 @@
 from random import *
 lst = [1,2,3,4,5]
 print(lst)
-#shuffle(lst)
+shuffle(lst)
 print(lst)
 #print(sample(lst,1))
 
@@ -10,5 +10,5 @@ print(type(users))
 users = list(users)
 print(type(users))
 
-# shuffle(users)
+shuffle(users)
 print(users)
