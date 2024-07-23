@@ -35,3 +35,4 @@ finally:
 class BigNumberError(Exception):
     def __init__(self, msg):
         return self.msg
+    
