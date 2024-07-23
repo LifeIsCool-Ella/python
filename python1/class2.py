@@ -4,7 +4,7 @@ class Unit:
         self.name = name
         self.hp = hp
         
-class AttackUnit:
+class AttackUnit(Unit):
     def __init__(self, name, hp, damage): # 생성자 
         Unit.__init__(self, name, hp)
         self.damage = damage
@@ -25,3 +25,20 @@ firebat1.attack("5시")
 
 firebat1.damaged(25)
 firebat1.damaged(25)            
+
+class Flyable:
+    def __init__(self, flying_speed):
+        self.flying_speed = flying_speed
+    
+    def fly(self, name, location):
+        print("{0} : {1} 방향으로 날아갑니다. [속도 {2}]"\
+            .format(name, location, self.flying_speed))
+        
+class FlyableAttactUnit(AttackUnit, Flyable):
+    def __init__(self, name, hp, damage, flying_speed):
+        AttackUnit.__init__(self, name, hp, damage)
+        Flyable.__init__(self, flying_speed)
+        
+valkyrie = FlyableAttactUnit("발키리", 200, 6,5)        
+valkyrie.fly(valkyrie.name,"3시")
+
