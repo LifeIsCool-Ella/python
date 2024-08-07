@@ -209,7 +209,9 @@ while running:
                                         
                 break
             
-                
+        else:
+            continue # 안쪽 for 문 조건이 맞이 않으면 continue 
+        break        
             
     if ball_to_remove > -1:
         del balls[ball_to_remove]
