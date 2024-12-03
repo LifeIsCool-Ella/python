@@ -67,7 +67,7 @@ def merge_image():
         
     dest_path = os.path.join(txt_dest_path.get(), "merge_photo.jpg")
     result_img.save(dest_path)
-    msgbox.showinfo("알림", "작업이 완료되었습니다.")
+    messagebox.showinfo("알림", "작업이 완료되었습니다.")
     
 def start():
     if list_file.size() == 0: 
@@ -75,7 +75,7 @@ def start():
         return
     
     if len(txt_dest_path.get()) == 0:
-        messagebox.showwarngin("경고","저장 경로를 선택하세요")
+        messagebox.showwarning("경고","저장 경로를 선택하세요")
         return
         
 
