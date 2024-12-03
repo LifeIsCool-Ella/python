@@ -1,3 +1,5 @@
+#pip install keyboard
+
 import time
 import keyboard
 from PIL import ImageGrab
