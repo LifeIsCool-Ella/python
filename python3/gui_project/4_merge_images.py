@@ -60,7 +60,7 @@ def merge_image():
         result_img.paste(img, (0, y_offset))
         y_offset += img.size[1]
         
-        progress = (idx + 1) / len(images)
+        progress = (idx + 1) / len(images) * 100
         p_var.set(progress)
         progress_bar.update()
         
