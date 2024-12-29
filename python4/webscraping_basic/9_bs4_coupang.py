@@ -15,4 +15,21 @@ soup = BeautifulSoup(res.text, "lxml")
 print(res.text)
 
 items = soup.find_all("dl", attrs={"class":re.compile("^search-product-wrap")})
-print(items[0].find("div", attr={"class":"name"}).get_text())
+print(items[0].find("div", attrs={"class":"name"}).get_text())
+for item in items:
+    name = item.find("div", attrs={"class":"name"}).get_text()
+    price = item.find("strong", attrs={"class":"price-value"}).get_text()
+    rate = item.find("em", attrs = {"class":"rating"}).get_text()
+    if rate:
+        rate = rate.get_text() 
+    else:
+        rate ="평점 없음"
+
+    rate_cnt = item.find("span", attrs={"class":"rating-total-count"}).get_text() 
+
+    if rate_cnt:
+        rate_cnt = rate_cnt.get_text() 
+    else:
+        rate_cnt ="평점 수 없음"
+
+    print(name, price, rate, rate_cnt)
