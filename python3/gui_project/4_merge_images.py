@@ -60,7 +60,7 @@ def merge_image():
         result_img.paste(img, (0, y_offset))
         y_offset += img.size[1]
         
-        progress = (idx + 1) / len(images)
+        progress = (idx + 1) / len(images) * 100
         p_var.set(progress)
         progress_bar.update()
         
@@ -77,7 +77,9 @@ def start():
     if len(txt_dest_path.get()) == 0:
         messagebox.showwarning("경고","저장 경로를 선택하세요")
         return
-        
+    
+    merge_image()    
+
 
 file_frame = Frame(root)
 file_frame.pack(fill="x", padx=5, pady=5)
