@@ -1,4 +1,6 @@
 # python
+### 나도코딩 블로그 
+- https://nadocoding.tistory.com/
 ### 나도코딩 강의
 - https://www.inflearn.com/roadmaps/621
 
