@@ -1,5 +1,7 @@
 # add master
-.gitignore
+#.gitignore
+python5/rpa_basic/1_excel/*.xlsx
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
