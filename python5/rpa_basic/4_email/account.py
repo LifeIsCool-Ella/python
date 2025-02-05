@@ -1,3 +1,0 @@
-EMAIL_ADDRESS ="test@gmail.com"
-EMAIL_PASSWORD="1111"
-RECEIVE_EMAIL_ADDRESS="test@gmail.com"
