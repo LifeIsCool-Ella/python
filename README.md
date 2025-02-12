@@ -28,5 +28,12 @@
 ### 파이썬 무료 강의 (활용편5) - 데이터 분석 및 시각화
 - https://www.inflearn.com/course/%EB%82%98%EB%8F%84%EC%BD%94%EB%94%A9-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D-%EC%8B%9C%EA%B0%81%ED%99%94
 - python6
+- pandas, matplotlib 
+- pandas : https://pandas.pydata.org/
+- matplotlib : https://matplotlib.org/
+- 나도코딩 블로그 https://nadocoding.tistory.com/90
 - 연령별 인구현황 https://jumin.mois.go.kr/
+- 판다스 사용법 : https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html
+- 번역본 : https://dandyrilla.github.io/2017-08-12/pandas-10min/
+- 요약본 : https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
 
