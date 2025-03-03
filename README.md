@@ -37,3 +37,9 @@
 - 번역본 : https://dandyrilla.github.io/2017-08-12/pandas-10min/
 - 요약본 : https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
 
+### 파이썬 무료 강의 (활용편6) - 이미지 처리 (OpenCV)
+- https://www.inflearn.com/course/%EB%82%98%EB%8F%84%EC%BD%94%EB%94%A9-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%B2%98%EB%A6%AC
+- 나도코딩 블로그 https://nadocoding.tistory.com/91
+- opencv https://opencv-python.readthedocs.io/en/latest/
+- 한글 https://opencv-python.readthedocs.io/en/latest/
+
